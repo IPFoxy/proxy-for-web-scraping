@@ -76,6 +76,7 @@ examples/: Code examples in different programming languages
 resources.md: Helpful tools and references related to proxies and scraping
 
 Best Practices for Using Proxies
+
 Rotate IPs regularly to avoid detection
 
 Match proxy location with your target website’s region
@@ -87,6 +88,7 @@ Combine proxies with proper headers and user agents
 Monitor error rates and block signals
 
 About IPfoxy
+
 IPfoxy provides enterprise-grade residential proxy solutions with:
 
 Global IP coverage across multiple countries
@@ -99,10 +101,12 @@ Support for web scraping, growth marketing, and global expansion
 
 
 Disclaimer
+
 This repository is for educational and informational purposes only.
 Always make sure your use of proxies complies with local laws,
 website terms of service, and applicable regulations.
 
 Contributing
+
 Contributions, suggestions, and improvements are welcome.
 Feel free to open an issue or submit a pull request.
