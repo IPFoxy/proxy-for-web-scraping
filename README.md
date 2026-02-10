@@ -1,39 +1,12 @@
 # Proxy for Web Scraping
 
-This repository provides **practical examples and best practices for using proxies in web scraping**.  
-It helps developers avoid IP bans, reduce CAPTCHAs, and improve scraping stability at scale.
-
----
-
-## Why Proxies Are Essential for Web Scraping
-
-Most websites deploy anti-bot mechanisms such as:
-
-- IP rate limiting
-- Temporary or permanent IP bans
-- CAPTCHA challenges
-- Geo-restricted content
-- Traffic pattern detection
-
-Using proxies is one of the most effective ways to increase scraping success rates.
-
----
-
-## What This Repository Covers
-
-- Basic proxy usage for web scraping
-- Python examples using `requests`
-- Common scraping failure reasons
-- Proxy rotation concepts
-- Best practices for scalable scraping systems
-
-This repository focuses on **clarity, simplicity, and real-world applicability**.
+This repository provides practical examples and best practices for using proxies in web scraping.
 
 ---
 
 ## Simple Scraping Example with Proxy (Python)
 
-```python
+~~~python
 import requests
 
 proxies = {
@@ -53,74 +26,50 @@ response = requests.get(
 )
 
 print(response.status_code)
-```python
-
+~~~
 
 The example above demonstrates a basic HTTP request routed through a proxy.
 
-Common Mistakes When Scraping Without Proxies
+---
 
-Sending too many requests from a single IP
+## Common Mistakes When Scraping Without Proxies
 
-Ignoring geographic targeting
+- Sending too many requests from a single IP
+- Ignoring geographic targeting
+- Reusing blocked IPs
+- Missing retry or timeout handling
 
-Reusing blocked IPs
+---
 
-Missing retry or timeout handling
-
-These mistakes often lead to unstable or failed scraping jobs.
-
-Proxy Rotation Explained
+## Proxy Rotation Explained
 
 Proxy rotation means assigning different IP addresses to requests or sessions.
 
-Benefits
+### Benefits
 
-Lower block rates
+- Lower block rates  
+- Higher request limits  
+- Improved long-term scraping reliability
 
-Higher request limits
+---
 
-Improved long-term scraping reliability
+## Best Practices for Proxy-Based Scraping
 
-Common Rotation Strategies
+- Use rotating residential or ISP proxies  
+- Control request frequency  
+- Monitor response status codes
 
-Per request
+---
 
-Per session
+## About IPfoxy
 
-On failure retry
+IPfoxy provides enterprise-grade global proxy infrastructure designed for web scraping, data collection, and cross-border business intelligence.  
 
-Best Practices for Proxy-Based Scraping
+Our solutions help businesses maintain scraping stability and scalability across diverse international markets.
 
-Use rotating residential or ISP proxies
+---
 
-Match proxy location with the target website region
+## Disclaimer
 
-Control request frequency and concurrency
-
-Combine proxies with realistic headers
-
-Monitor response status codes and failures
-
-Typical Use Cases
-
-Search engine result scraping
-
-E-commerce product data collection
-
-Price and inventory monitoring
-
-SEO rank tracking
-
-Market research and intelligence
-
-About IPfoxy
-
-IPfoxy provides enterprise-grade global proxy infrastructure for web scraping, data collection, and cross-border business intelligence.
-
-This repository reflects common proxy usage patterns used in real-world scraping systems.
-
-Disclaimer
-
-This project is for educational purposes only.
+This project is for educational purposes only.  
 Always comply with the target website's terms of service and applicable laws.
