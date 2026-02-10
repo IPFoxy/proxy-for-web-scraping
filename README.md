@@ -53,7 +53,8 @@ response = requests.get(
 )
 
 print(response.status_code)
-~~~
+```python
+
 
 The example above demonstrates a basic HTTP request routed through a proxy.
 
