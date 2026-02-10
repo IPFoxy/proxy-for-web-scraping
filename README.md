@@ -53,6 +53,8 @@ response = requests.get(
 )
 
 print(response.status_code)
+~~~
+
 The example above demonstrates a basic HTTP request routed through a proxy.
 
 Common Mistakes When Scraping Without Proxies
